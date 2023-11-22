@@ -1,0 +1,153 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.container-details{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.details {
+  background-color: #7BDC82;
+  padding: 20px;
+  border-radius: 1rem;
+  max-width: 800px;
+  width: 90%;
+  font-size: 25px;
+  font-family: "Montserrat Medium", sans-serif;
+  animation: zoomUp 0.2s;
+}
+
+.details .card:hover {
+  cursor: pointer;
+  transform: scale(1.10);
+  transition: all .5s ease;
+}
+
+.card-active {
+  border-color: rgb(208, 255, 0);
+}
+
+.details-close{
+  animation: zoomDown 0.2s;
+}
+
+.details-poste{
+  background-color: #7BDC82;
+  height: auto;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.btn-delete{
+  background-color: red;
+  color: white;
+}
+
+.btn-close{
+  background-color: #5C7852;
+  color: white;
+}
+
+.btn-create{
+  position: relative;
+  left: 45%;
+  bottom: 10px;
+}
+
+@keyframes zoomUp{
+  0%{
+    scale: 0%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+  }
+  10%{
+    scale: 10%;
+  }
+  20%{
+    scale: 20%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.02);
+  }
+  30%{
+    scale: 30%;
+  }
+  40%{
+    scale: 40%;
+  }
+  50%{
+    scale: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  }
+  60%{
+    scale: 60%;
+  }
+  70%{
+    scale: 70%;
+  }
+  80%{
+    scale: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  }
+  90%{
+    scale: 90%;
+  }
+  100%{
+    scale: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@keyframes zoomDown{
+  0%{
+    scale: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  10%{
+    scale: 90%;
+  }
+  20%{
+    scale: 80%;
+  }
+  30%{
+    scale: 70%;
+  }
+  40%{
+    scale: 60%;
+  }
+  50%{
+    scale: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  }
+  60%{
+    scale: 40%;
+  }
+  70%{
+    scale: 30%;
+  }
+  80%{
+    scale: 20%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.02);
+  }
+  90%{
+    scale: 10%;
+  }
+  100%{
+    scale: 0%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+  }
+}

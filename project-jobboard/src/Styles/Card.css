@@ -1,0 +1,117 @@
+:root {
+  --shadow-color: #c2fbd7;
+  --shadow-color-light: #5EB6DD;
+  --shadow-color2: #c2fbd7;
+  --shadow-color-light2: #c68467;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: auto;
+  width: calc(33.33% - 20px);
+  border: 2px solid black;
+  border-radius: 1rem;
+  background-color: #2D58C7;
+  color: white;
+  gap: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 25px;
+  grid-column: 1 / span 3;
+  margin-top: 0;
+  text-transform: uppercase;
+  animation: neon-card 3s infinite;
+  font-family: "Archivo Black", "Archivo", sans-serif;
+}
+
+.card-content {
+  text-align: center;
+  font-size: 20px;
+  grid-column: 1 / span 3;
+}
+
+.card-footer {
+  text-align: center;
+  font-size: 20px;
+  grid-column: 1 / span 3;
+  margin-bottom: 0;
+}
+
+.company-name {
+  text-align: center;
+  font-size: 25px;
+  grid-column: 1 / span 3;
+  margin-top: 0;
+  animation: neon-company 3s infinite;
+}
+
+.card-footer {
+  text-align: center;
+  font-size: 20px;
+  grid-column: 1 / span 3;
+  margin-bottom: 0;
+}
+
+.btn, a{
+  text-decoration: none;
+  color: green;
+}
+
+@keyframes neon-card {
+  0% {
+    text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
+      0 0 3px var(--shadow-color-light), 0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light),
+      0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color), 0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
+  }
+
+  50% {
+    text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
+      0 0 5px var(--shadow-color-light), 0 0 15px var(--shadow-color-light), 0 0 25px var(--shadow-color-light),
+      0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 60px var(--shadow-color), 0 0 80px var(--shadow-color), 0 0 110px var(--shadow-color), 0 0 210px var(--shadow-color);
+  }
+
+  100% {
+    text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
+      0 0 3px var(--shadow-color-light), 0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light),
+      0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color), 0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
+  }
+}
+
+@keyframes neon-company {
+  0% {
+    text-shadow: -1px -1px 1px var(--shadow-color-light2), -1px 1px 1px var(--shadow-color-light2), 1px -1px 1px var(--shadow-color-light2), 1px 1px 1px var(--shadow-color-light2),
+      0 0 3px var(--shadow-color-light2), 0 0 10px var(--shadow-color-light2), 0 0 20px var(--shadow-color-light2),
+      0 0 30px var(--shadow-color2), 0 0 40px var(--shadow-color2), 0 0 50px var(--shadow-color2), 0 0 70px var(--shadow-color2), 0 0 100px var(--shadow-color2), 0 0 200px var(--shadow-color2);
+  }
+
+  50% {
+    text-shadow: -1px -1px 1px var(--shadow-color-light2), -1px 1px 1px var(--shadow-color-light2), 1px -1px 1px var(--shadow-color-light2), 1px 1px 1px var(--shadow-color-light2),
+      0 0 5px var(--shadow-color-light2), 0 0 15px var(--shadow-color-light2), 0 0 25px var(--shadow-color-light2),
+      0 0 40px var(--shadow-color2), 0 0 50px var(--shadow-color2), 0 0 60px var(--shadow-color2), 0 0 80px var(--shadow-color2), 0 0 110px var(--shadow-color2), 0 0 210px var(--shadow-color2);
+  }
+
+  100% {
+    text-shadow: -1px -1px 1px var(--shadow-color-light2), -1px 1px 1px var(--shadow-color-light2), 1px -1px 1px var(--shadow-color-light2), 1px 1px 1px var(--shadow-color-light2),
+      0 0 3px var(--shadow-color-light2), 0 0 10px var(--shadow-color-light2), 0 0 20px var(--shadow-color-light2),
+      0 0 30px var(--shadow-color2), 0 0 40px var(--shadow-color2), 0 0 50px var(--shadow-color2), 0 0 70px var(--shadow-color2), 0 0 100px var(--shadow-color2), 0 0 200px var(--shadow-color2);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    height: auto;
+    width: auto;
+  }
+}

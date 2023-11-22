@@ -1,0 +1,17 @@
+.account-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.account-container p{
+    font-size: x-large;
+}
+
+.form-account{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

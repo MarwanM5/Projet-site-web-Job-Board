@@ -1,0 +1,48 @@
+.nav {
+    width: var(--width);
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px;
+    background-color: #653F08;
+    color: white;
+    font-size: 25px;
+    font-family: "Montserrat Medium", sans-serif;
+    border-radius: 1rem;
+}
+
+.nav ul {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: left;
+    list-style: none;
+    padding-left: 0;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav button{
+    display: flex;
+    float: right;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.nav a:link,
+a:visited {
+    color: var(--dark);
+    font-family: "Montserrat Medium", sans-serif;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.nav a.active {
+    color: var(--secondary);
+}
+
+.active {
+    background: #2D58C7;
+    padding: 10px;
+    border-radius: 10px;
+}
