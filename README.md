@@ -3,7 +3,7 @@
 ## Started
 Clone the project in your computer:
 ```bash
-git clone git@github.com:EpitechMscProPromo2026/T-WEB-501-LYO_19.git
+git@github.com:MarwanM5/Projet-site-web-Job-Board.git
 ```
 
 ## Database
